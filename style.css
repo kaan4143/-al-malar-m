@@ -1,0 +1,74 @@
+.container{
+
+    background-color:rgba( 20 , 35 , 40, 0.4);
+    margin: 10px 40px;
+}
+.başlık{
+    text-align: center;
+    color: white;
+}
+#flix{
+color: red;
+}
+.container2{
+    background-color:rgba(9, 11, 11, 0.9);
+    width: 330px;
+    margin: auto;
+}
+.container2 label,p{
+    color: white;
+    margin-left: 15px;
+    
+
+}
+#name {
+    width: 280px;
+    margin-left: 15px;
+    height: 40px;
+}
+#age {
+    width: 280px;
+    margin-left: 15px;
+    height: 40px;
+}
+#email {
+    width: 280px;
+    margin-left: 15px;
+    height: 40px;
+}
+#content{
+    margin-left: 15px;
+}
+ #romance {
+    margin-left: 15px;
+ }
+ #action {
+    margin-left: 15px;
+ }
+ #scary {
+    margin-left: 15px;
+ }
+ #comedy {
+    margin-left: 15px;
+ }
+ #male {
+    margin-left: 15px;
+ }
+ #female {
+    margin-left: 15px;
+ }
+ #other {
+    margin-left: 15px;
+ }
+ #yorum {
+    margin-left: 15px;
+    height: 70px;
+ }
+ #submit{
+    background-color: red;
+    border-radius: 15px;
+    border-color: red;
+    margin-left: 120px;
+    margin-top: 5px;
+    color: white;
+ }
