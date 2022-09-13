@@ -1,0 +1,187 @@
+:root {
+  --red: #dc3545;
+}
+
+body {
+  /* background-image: url("../img/fallback.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background-color: #f1f3f8;
+}
+
+/*! -------------- 1- NAVBAR ---------------- */
+
+.navbar {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-image: url("../img/backgroundDark01L.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* position: sticky;
+  top: 0; */
+}
+.nav-link {
+  color: white;
+  transition: all 0.8s;
+  margin: 0.4rem;
+}
+
+.nav-link:hover {
+  border: 1px solid #5af7dc;
+  border: none;
+  background-color: #5af7dc;
+  border-radius: 5px;
+  color: black;
+}
+
+.navbar-brand img {
+  max-height: 90px;
+}
+
+/*! ------------- 2- CAROUSEL --------------- */
+.carousel-item {
+  max-height: calc(100vh - 88px);
+}
+
+.carousel-item h5 {
+  color: var(--red);
+  font-size: 2.5rem;
+  text-shadow: 3px 3px 3px black;
+}
+
+.carousel-item p {
+  text-shadow: 3px 3px 3px black;
+  font-weight: 600;
+}
+
+.carousel-item .btn {
+  width: 7rem;
+  margin-bottom: 1rem;
+}
+
+.carousel-indicators button {
+  background-color: var(--red) !important;
+  height: 0.4rem !important;
+  width: 3rem !important;
+  margin-right: 0.5rem !important;
+}
+
+.carousel-caption {
+  bottom: 5rem;
+}
+
+/*! ------------ 3- HISTORY SECTION ----------- */
+img.player_picture {
+  border-radius: 50%;
+}
+
+.history {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+/*! ------------- 4- INSTRUCTORS -------------*/
+
+section#performance .card {
+  transition: transform 0.5s;
+}
+
+section#performance .card:hover {
+  transform: scale(1.05);
+}
+
+section#performance .btn {
+  transition: all 0.5s;
+  color: rgb(13, 58, 255);
+  font-weight: 600;
+  border: 1px solid rgb(13, 58, 255);
+}
+section#performance .btn:hover {
+  background-color: rgb(13, 58, 255);
+  color: white;
+}
+
+.performance {
+  background-image: url("../img/backgroundDark01L.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 1.2rem !important;
+  margin-bottom: 4rem;
+}
+
+/*! ----------- 4- STUDENTS SECTION ----------*/
+
+/*! ----------- 5- COURSES SECTION ----------- */
+
+.latest {
+  background-image: url("../img/backgroundDark01L.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tab-content img {
+  transition: all 0.3s;
+}
+
+.tab-content img:hover {
+  transform: scale(1.05);
+}
+/*! ----------- 6- CONTACT SECTION ------------ */
+
+.sponsors {
+  margin-bottom: 4rem;
+}
+
+/** -------------- UP-BUTTON ------------------ */
+
+.up-btn {
+  color: rgb(13, 58, 255);
+  position: fixed;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid rgb(13, 58, 255);
+  bottom: 1rem;
+  right: 1rem;
+  text-align: center;
+  padding: 0.6rem;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+  z-index: 999999;
+}
+
+.up-btn:hover {
+  background-color: rgb(13, 58, 255);
+  color: white;
+  opacity: 60%;
+}
+
+/*! --------------- 7- FOOTER ----------------- */
+
+footer {
+  background: url("../img/footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-position: center;
+}
+
+.social a {
+  color: white;
+  margin: 1rem;
+  transition: all 0.4s;
+}
+
+.social a:hover {
+  opacity: 40%;
+}
+
+.privacy a {
+  text-decoration: none;
+  color: white;
+}
+
+.privacy a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,909 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <link rel="shortcut icon" href="./img/svg/ucl.ico" type="image/x-icon" />
+    <title>Champions League | Captain Price</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body id="body">
+    <!-- NAVBAR -->
+
+    <!-- <nav class="navbar navbar-expand-lg bg-danger bg-gradient navbar-dark"> -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./img/svg/logotype_dark.svg" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#history">Stats</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#performance">performance zone</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#teamof">Team of the week</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#highlists">highlists</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CAROUSEL -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/slider1.jpeg" class="d-block w-100" alt="img1" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-light">Player of the Week</h5>
+            <p>Robert Lewandowski enjoys scoring for Barcelona on Matchday 1</p>
+            <div>
+              <a
+                href="https://www.uefa.com/uefachampionsleague/video/0279-160ecbd1fbf7-c8852f06c764-1000--lewandowski-hat-tricks-for-three-clubs/"
+                target="_blank"
+                ><button type="button" class="w-25 btn btn-primary text-light">
+                  Watch Performance
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/slider2.jpeg" class="d-block w-100" alt="img2" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-light">Goal of the Week</h5>
+            <p>
+              Kylian Mbappé celebrates after scoring for Paris against Juventus
+            </p>
+            <div>
+              <a
+                href="https://www.uefa.com/uefachampionsleague/video/0279-160c6e91a1a2-e954f69afb74-1000--mbappe-and-neymar-combine-for-stunning-paris-goal/"
+                target="_blank"
+                ><button type="button" class="w-25 btn btn-primary text-light">
+                  Watch Goal
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/slider3.jpeg" class="d-block w-100" alt="img3" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-light">Zieliński: 'We have to be proud'</h5>
+            <p>
+              Piotr Zieliński gave his thoughts to UEFA.com after leading Napoli
+              to a sensational victory over Liverpool.
+            </p>
+            <div>
+              <a
+                href="https://www.uefa.com/uefachampionsleague/video/0279-160ea1e55e76-87989a6e27f8-1000--highlights-napoli-4-1-liverpool/"
+                target="_blank">
+                <button type="button" class="w-25 btn btn-primary text-light">
+                  Watch Highlight
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/slider4.jpeg" class="d-block w-100" alt="img2" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-light">Griezmann on last-gasp Atlético win</h5>
+            <p>
+              Atlético super-sub Antoine Griezmann spoke to UEFA.com after his
+              side's dramatic late win against Porto.
+            </p>
+            <div>
+              <a
+                href="https://www.uefa.com/uefachampionsleague/video/0279-160e9d5a0a39-24d9edabd0ba-1000--highlights-atletico-2-1-porto/"
+                target="_blank">
+                <button type="button" class="w-25 btn btn-primary text-light">
+                  Watch Highlight
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- STATS -->
+    <main class="text-center">
+      <section id="history" class="container history bg-light p-3">
+        <h2 class="display-6 text-primary text-center mb-4">
+          All-time Stats & Rankings
+        </h2>
+        <div class="row justify-content-center text-center">
+          <div class="col-12 col-xl-4">
+            <h4>Club Stats</h4>
+            <h5>Most Titles</h5>
+            <div class="list-group">
+              <div
+                class="list-group-item list-group-item-action active"
+                aria-current="true">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">
+                    <small class="fs-6">1</small>
+                    <img src="./img/club/real.png" width="40px" alt="" />Real
+                    Madrid
+                  </h5>
+                  <small class="fs-4">14</small>
+                </div>
+              </div>
+              <div
+                class="list-group-item list-group-item-action"
+                aria-current="true">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">
+                    <small class="fs-6 opacity-75">2</small>
+                    <img src="./img/club/milan.png" width="40px" alt="" />
+                    Milan
+                  </h5>
+                  <small class="fs-4">7</small>
+                </div>
+              </div>
+              <div
+                class="list-group-item list-group-item-action"
+                aria-current="true">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">
+                    <small class="fs-6 opacity-75">3</small>
+                    <img src="./img/club/liverpool.png" width="40px" alt="" />
+                    Liverpool
+                  </h5>
+                  <small class="fs-4">6</small>
+                </div>
+              </div>
+              <div
+                class="list-group-item list-group-item-action"
+                aria-current="true">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">
+                    <small class="fs-6 opacity-75">3</small>
+                    <img
+                      src="./img/club/bayern.png"
+                      width="40px"
+                      alt="" />Bayern
+                  </h5>
+                  <small class="fs-4">6</small>
+                </div>
+              </div>
+              <div
+                class="list-group-item list-group-item-action"
+                aria-current="true">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">
+                    <small class="fs-6 opacity-75">5</small>
+                    <img
+                      src="./img/club/barca.png"
+                      width="40px"
+                      alt="" />Barcelona
+                  </h5>
+                  <small class="fs-4">5</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- PLAYER STATS GOAL-->
+          <div class="col-12 col-xl-4">
+            <h4>Player Stats</h4>
+            <h5>Top goalscorers</h5>
+            <div class="list-group">
+              <div
+                class="list-group-item list-group-item-action active"
+                aria-current="true">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">
+                    <small class="fs-6">1</small>
+                    <img
+                      class="player_picture me-2"
+                      src="./img/player/ronaldo.jpg"
+                      width="40px"
+                      alt="" />Ronaldo
+                  </h5>
+                  <small class="fs-4">141</small>
+                </div>
+              </div>
+              <div
+                class="list-group-item list-group-item-action"
+                aria-current="true">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">
+                    <small class="fs-6 opacity-75">2</small>
+                    <img
+                      class="player_picture me-2"
+                      src="./img/player/messi.jpg"
+                      width="40px"
+                      alt="" />
+                    Messi
+                  </h5>
+                  <small class="fs-4">125</small>
+                </div>
+              </div>
+              <div
+                class="list-group-item list-group-item-action"
+                aria-current="true">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">
+                    <small class="fs-6 opacity-75">3</small>
+                    <img
+                      class="player_picture me-2"
+                      src="./img/player/lewandowski.jpg"
+                      width="40px"
+                      alt="" />
+                    Lewandowski
+                  </h5>
+                  <small class="fs-4">89</small>
+                </div>
+              </div>
+              <div
+                class="list-group-item list-group-item-action"
+                aria-current="true">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">
+                    <small class="fs-6 opacity-75">4</small>
+                    <img
+                      class="player_picture me-2"
+                      src="./img/player/benzema.jpg"
+                      width="40px"
+                      alt="" />Benzema
+                  </h5>
+                  <small class="fs-4">86</small>
+                </div>
+              </div>
+              <div
+                class="list-group-item list-group-item-action"
+                aria-current="true">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">
+                    <small class="fs-6 opacity-75">5</small>
+                    <img
+                      class="player_picture me-2"
+                      src="./img/player/raul.jpg"
+                      width="40px"
+                      alt="" />Raúl
+                  </h5>
+                  <small class="fs-4">71</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- PLAYER STATS ASSITS -->
+          <div class="col-12 col-xl-4">
+            <h4>Player Stats</h4>
+            <h5>Most Assits</h5>
+            <div class="list-group">
+              <div
+                class="list-group-item list-group-item-action active"
+                aria-current="true">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">
+                    <small class="fs-6">1</small>
+                    <img
+                      class="player_picture me-2"
+                      src="./img/player/ronaldo.jpg"
+                      width="40px"
+                      alt="" />Ronaldo
+                  </h5>
+                  <small class="fs-4">42</small>
+                </div>
+              </div>
+              <div
+                class="list-group-item list-group-item-action"
+                aria-current="true">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">
+                    <small class="fs-6 opacity-75">2</small>
+                    <img
+                      class="player_picture me-2"
+                      src="./img/player/messi.jpg"
+                      width="40px"
+                      alt="" />
+                    Messi
+                  </h5>
+                  <small class="fs-4">36</small>
+                </div>
+              </div>
+              <div
+                class="list-group-item list-group-item-action"
+                aria-current="true">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">
+                    <small class="fs-6 opacity-75">3</small>
+                    <img
+                      class="player_picture me-2"
+                      src="./img/player/di maria.jpg"
+                      width="40px"
+                      alt="" />
+                    Di María
+                  </h5>
+                  <small class="fs-4">35</small>
+                </div>
+              </div>
+              <div
+                class="list-group-item list-group-item-action"
+                aria-current="true">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">
+                    <small class="fs-6 opacity-75">4</small>
+                    <img
+                      class="player_picture me-2"
+                      src="./img/player/neymar.jpg"
+                      width="40px"
+                      alt="" />Neymar
+                  </h5>
+                  <small class="fs-4">31</small>
+                </div>
+              </div>
+              <div
+                class="list-group-item list-group-item-action"
+                aria-current="true">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">
+                    <small class="fs-6 opacity-75">4</small>
+                    <img
+                      class="player_picture me-2"
+                      src="./img/player/gigs.jpg"
+                      width="40px"
+                      height="40px"
+                      alt="" />Giggs
+                  </h5>
+                  <small class="fs-4">31</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PERFORMANCE ZONE -->
+      <section id="performance" class="container performance bg-dark">
+        <h2 class="display-6 text-light">PERFORMANCE ZONE</h2>
+        <div class="row justify-content-center g-3">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img
+                src="./img/player/lewandowski.jpg"
+                class="card-img-top"
+                alt="t1" />
+              <div class="card-body">
+                <h5 class="card-title h6">Robert Lewandowski</h5>
+                <p class="card-text">
+                  Forward <br />
+                  <span class="text-primary">77 pts</span> <br />
+                  <small>Last Match: 3 Goals</small>
+                </p>
+                <a
+                  href="https://www.uefa.com/uefachampionsleague/clubs/players/250002096/?iv=true&ivReturnUrl=%2Fuefachampionsleague%2Fperformancezone%2Franking%2F"
+                  target="_blank">
+                  <button type="button" class="btn btn-outline-primary">
+                    View stats
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img
+                src="./img/player/mbappe.jpg"
+                class="card-img-top"
+                alt="t1" />
+              <div class="card-body">
+                <h5 class="card-title h6">Kylian Mbappé</h5>
+                <p class="card-text">
+                  Forward <br />
+                  <span class="text-primary">60 pts</span> <br />
+                  <small>Last Match: 2 Goals</small>
+                </p>
+                <a
+                  href="https://www.uefa.com/uefachampionsleague/clubs/players/250076574/?iv=true&ivReturnUrl=%2Fuefachampionsleague%2Fperformancezone%2Franking%2F"
+                  target="_blank">
+                  <button type="button" class="btn btn-outline-primary">
+                    View stats
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img
+                src="./img/player/zielinski.jpg"
+                class="card-img-top"
+                alt="t1" />
+              <div class="card-body">
+                <h5 class="card-title h6">Piotr Zieliński</h5>
+                <p class="card-text">
+                  Midfielder <br />
+                  <span class="text-primary">57 pts</span> <br />
+                  <small>Last Match: 2 Goals </small>
+                </p>
+                <a
+                  href="https://www.uefa.com/uefachampionsleague/clubs/players/250024370/?iv=true&ivReturnUrl=%2Fuefachampionsleague%2Fperformancezone%2Franking%2F"
+                  target="_blank">
+                  <button type="button" class="btn btn-outline-primary">
+                    View stats
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img
+                src="./img/player/haaland.jpg"
+                class="card-img-top"
+                alt="t1" />
+              <div class="card-body">
+                <h5 class="card-title h6">Erling Haaland</h5>
+                <p class="card-text">
+                  Forward <br />
+                  <span class="text-primary">55 pts</span> <br />
+                  <small>Last Match: 2 Goals</small>
+                </p>
+                <a
+                  href="https://www.uefa.com/uefachampionsleague/clubs/players/250103758/?iv=true&ivReturnUrl=%2Fuefachampionsleague%2Fperformancezone%2Franking%2F"
+                  target="_blank">
+                  <button type="button" class="btn btn-outline-primary">
+                    View stats
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img
+                src="./img/player/Richarlison.jpg"
+                class="card-img-top"
+                alt="t1" />
+              <div class="card-body">
+                <h5 class="card-title h6">Richarlison</h5>
+                <p class="card-text">
+                  Forward <br />
+                  <span class="text-primary">51 pts</span> <br />
+                  <small>Last Match: 2 Goals</small>
+                </p>
+                <a
+                  href="https://www.uefa.com/uefachampionsleague/clubs/players/250129539/?iv=true&ivReturnUrl=%2Fuefachampionsleague%2Fperformancezone%2Franking%2F"
+                  target="_blank">
+                  <button type="button" class="btn btn-outline-primary">
+                    View stats
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img
+                src="./img/player/Luis Díaz.jpg"
+                class="card-img-top"
+                alt="t1" />
+              <div class="card-body">
+                <h5 class="card-title h6">Luis Díaz</h5>
+                <p class="card-text">
+                  Forward <br />
+                  <span class="text-primary">46 pts</span> <br />
+                  <small>Last Match: 1 Goals</small>
+                </p>
+                <a
+                  href="https://www.uefa.com/uefachampionsleague/clubs/players/250132811/?iv=true&ivReturnUrl=%2Fuefachampionsleague%2Fperformancezone%2Franking%2F"
+                  target="_blank">
+                  <button type="button" class="btn btn-outline-primary">
+                    View stats
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TEAM OF THE WEEK -->
+      <section id="teamof">
+        <h2 class="display-6 text-primary mt-3">TEAM OF THE WEEK</h2>
+
+        <div
+          class="tab-pane show text-center mb-5"
+          id=""
+          role="tabpanel"
+          aria-labelledby="pills-home-tab">
+          <div class="">
+            <a
+              data-fslightbox=""
+              href="./img/ucl_-_ff_-_totw_list_-_instagram_stories_2_.jpeg">
+              <img
+                src="./img/teamoftheweek.jpeg"
+                class="img-thumbnail"
+                alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- HIGHLISTS -->
+      <section id="highlists" class="container latest p-3">
+        <h1 class="text-center text-light display-6">HIGHLISTS</h1>
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#fs-images"
+              type="button"
+              role="tab"
+              aria-selected="true">
+              Match Day 1
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#ds-images"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              tabindex="-1">
+              Match Day 2
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-contact-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#dev-images"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              tabindex="-1">
+              Match Day 3
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade active show"
+            id="fs-images"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+            tabindex="0">
+            <div class="row g-3">
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox=""
+                  href="https://www.youtube.com/watch?v=NQthJWCPVbE&list=PLJFWSCR-naiokr342MZ46h10Sp9IMeRpD&index=16&t=304s">
+                  <img
+                    src="./img/fc_barcelona_v_viktoria_plzen_group_c_-_uefa_champions_league.jpeg"
+                    class="img-thumbnail"
+                    alt="" />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox=""
+                  href="https://www.youtube.com/watch?v=udMhUtrmilE&list=PLJFWSCR-naiokr342MZ46h10Sp9IMeRpD&index=13">
+                  <img
+                    src="./img/fbl-eur-c1-atletico_madrid-porto.jpeg"
+                    class="img-thumbnail"
+                    alt="fs2" />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox=""
+                  href="https://www.youtube.com/watch?v=PxCsMSD6zs8&list=PLJFWSCR-naiokr342MZ46h10Sp9IMeRpD&index=12">
+                  <img
+                    src="./img/fc_internazionale_v_fc_bayern_munchen_group_c_-_uefa_champions_league.jpeg"
+                    class="img-thumbnail"
+                    alt="fs3" />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox=""
+                  href="https://www.youtube.com/watch?v=sEW2zRnJTMc&list=PLJFWSCR-naiokr342MZ46h10Sp9IMeRpD&index=6">
+                  <img
+                    src="./img/sevilla_fc_v_manchester_city_group_g_-_uefa_champions_league.jpeg"
+                    class="img-thumbnail"
+                    alt="fs4" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="tab-pane fade"
+            id="ds-images"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab"
+            tabindex="0">
+            <div class="row g-3">
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox=""
+                  href="https://www.youtube.com/watch?v=a0a0T9fa4l4&list=PLJFWSCR-naiokr342MZ46h10Sp9IMeRpD&index=4">
+                  <img
+                    src="./img/celtic_v_real_madrid_-_uefa_champions_league_-_group_f_-_celtic_park.jpeg"
+                    class="img-thumbnail"
+                    alt="ds1" />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox=""
+                  href="https://www.youtube.com/watch?v=zt4JZ58lMmo&list=PLJFWSCR-naiokr342MZ46h10Sp9IMeRpD&index=11">
+                  <img
+                    src="./img/ssc_napoli_v_liverpool_fc_group_a_-_uefa_champions_league.jpeg"
+                    class="img-thumbnail"
+                    alt="ds2" />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox=""
+                  href="https://www.youtube.com/watch?v=-YcVi4YocEw&list=PLJFWSCR-naiokr342MZ46h10Sp9IMeRpD&index=15">
+                  <img
+                    src="./img/tottenham_hotspur_v_olympique_marseille_group_d_-_uefa_champions_league.jpeg"
+                    class="img-thumbnail"
+                    alt="ds3" />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox=""
+                  href="https://www.youtube.com/watch?v=O_uSV7BRbCc&list=PLJFWSCR-naiokr342MZ46h10Sp9IMeRpD&index=9">
+                  <img
+                    src="./img/fbl-eur-c1-dortmund-copenhagen.jpeg"
+                    class="img-thumbnail"
+                    alt="ds4" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="tab-pane fade"
+            id="dev-images"
+            role="tabpanel"
+            aria-labelledby="pills-contact-tab"
+            tabindex="0">
+            <div class="row g-3">
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox=""
+                  href="https://www.youtube.com/watch?v=EOXAqOAFlFw&list=PLJFWSCR-naiokr342MZ46h10Sp9IMeRpD&index=8">
+                  <img
+                    src="./img/sl_benfica_v_maccabi_haifa_fc_group_h_-_uefa_champions_league.jpeg"
+                    class="img-thumbnail"
+                    alt="ops1" />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox=""
+                  href="https://www.youtube.com/watch?v=WX-FSqnGiCw&list=PLJFWSCR-naiokr342MZ46h10Sp9IMeRpD&index=2">
+                  <img
+                    src="./img/afc_ajax_v_rangers_fc_group_a_-_uefa_champions_league.jpeg"
+                    class="img-thumbnail"
+                    alt="ops2" />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox=""
+                  href="https://www.youtube.com/watch?v=OUhqhZ2IQqE&list=PLJFWSCR-naiokr342MZ46h10Sp9IMeRpD&index=3">
+                  <img
+                    src="./img/fbl-eur-c1-psg-juventus.jpeg"
+                    class="img-thumbnail"
+                    alt="ops3" />
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <a
+                  data-fslightbox=""
+                  href="https://www.youtube.com/watch?v=RU1KXQKhZw0&list=PLJFWSCR-naiokr342MZ46h10Sp9IMeRpD&index=7">
+                  <img
+                    src="./img/fc_salzburg_v_ac_milan_group_e_-_uefa_champions_league.jpeg"
+                    class="img-thumbnail"
+                    alt="ops4" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="tab-pane fade"
+            id="pills-disabled"
+            role="tabpanel"
+            aria-labelledby="pills-disabled-tab"
+            tabindex="0"></div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <div class="sponsors container d-flex justify-content-around mt-5">
+          <div class="row">
+            <p>Official Global Sponsors</p>
+            <img class="col-2" src="./img/social/FedEx.png" alt="" />
+            <img class="col-2" src="./img/social/Mastercard.png" alt="" />
+            <img class="col-2" src="./img/social/Oppo.png" alt="" />
+            <img class="col-2" src="./img/social/PS5.png" alt="" />
+            <img class="col-2" src="./img/social/Ruffles.png" alt="" />
+            <img class="col-2" src="./img/social/Turkish.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <div class="footer">
+        <div class="text-center">
+          <a href="https://www.uefa.com/uefachampionsleague/"
+            ><img
+              src="./img/svg/logo_dark.svg"
+              width="100px"
+              height="100px"
+              alt=""
+              class="mt-5"
+          /></a>
+          <a href="https://www.uefa.com/uefaeuropaleague/"
+            ><img
+              src="./img/svg/avrupa.svg"
+              width="100px"
+              height="100px"
+              alt=""
+              class="ms-1 mt-5"
+          /></a>
+          <a href="https://www.uefa.com/uefaeuropaconferenceleague/"
+            ><img
+              src="./img/svg/konferans.svg"
+              width="100px"
+              height="100px"
+              alt=""
+              class="ms-1 mt-5"
+          /></a>
+        </div>
+        <hr />
+        <div class="social text-light fs-1 text-center mt-4 bg-gradient">
+          <p class="fs-6">Follow us on</p>
+          <a href="https://twitter.com/championsleague"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="https://www.facebook.com/championsleague"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="http://www.youtube.com/uefatv"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+          <a href="https://www.instagram.com/championsleague/">
+            <i class="fa-brands fa-instagram"></i
+          ></a>
+
+          <div class="market text-center">
+            <a
+              href="https://img.uefa.com/imgml/2016/euro/common-elements/appstore.png?imwidth=140"
+              ><img src="./img/social/appstore.png" alt=""
+            /></a>
+            <a href="https://play.google.com/store/apps/details?id=com.uefa.ucl"
+              ><img src="./img/social/googleplay.png" alt=""
+            /></a>
+          </div>
+        </div>
+        <hr />
+        <div class="text-center text-light mt-4 privacy">
+          <a href="https://www.uefa.com/uefachampionsleague/#"
+            ><p class="fs-6 mb-3">
+              Privacy Terms and conditions Cookie policy Cookie Settings
+            </p></a
+          >
+          <p class="fs-6 mt-5 mb-5 opacity-50">
+            © 1998-2022 UEFA. All rights reserved.
+          </p>
+        </div>
+      </div>
+
+      <div class="designer mt-5 pt-5">
+        <h3 class="text-light text-center pt-5">Cloned By: Captain Price</h3>
+      </div>
+    </footer>
+
+    <!-- UP-BTN -->
+    <a class="up-btn" href="#body">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- SCRIPTS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"></script>
+
+    <script src="fslightbox.js"></script>
+  </body>
+</html>
