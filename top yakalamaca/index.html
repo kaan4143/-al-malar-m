@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tıkla.yakala</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      #btn {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: rgb(223, 16, 16);
+        border-radius: 50%;
+        font-size: 14px;
+
+      }
+      h1{
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>KIRMIZI TOPU YAKALA</h1>
+    <button type="button" id="btn">TIKLA</button>
+
+    <script>
+      var counter = 0,
+        btn,
+        xpos,
+        ypos;
+      btn = document.querySelector("#btn");
+      btn.onmouseover = function () {
+        counter++;
+        xpos = parseInt(Math.random() * 1300);
+        ypos = parseInt(Math.random() * 700);
+        btn.style.left = xpos + "px";
+        btn.style.top = ypos + "px";
+        btn.style.width = this.clientWidth + 10 + "px";
+        btn.style.height = this.clientHeight + 10 + "px";
+        btn.style.fontSize =10 + counter*2 + "px";
+      };
+      btn.onclick = function () {
+        alert(counter + ".seferde tıklayabildin.");
+        btn.style.width = "50px";
+        btn.style.height = "50px";
+        counter = 0;
+      };
+    </script>
+  </body>
+</html>
