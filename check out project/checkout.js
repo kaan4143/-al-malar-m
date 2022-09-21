@@ -3,10 +3,12 @@
 // const shippingFreePrice = 300;
 
 window.addEventListener("load", () => {
+  calculateCartPrice();
   //set items to LocalStorage
-  // localStorage.setItem("taxRate", taxRate);
-  // localStorage.setItem("shippingPrice", shippingPrice);
-  // localStorage.setItem("shippingFreePrice", shippingFreePrice);
+  localStorage.setItem("taxRate", taxRate);
+  localStorage.setItem("shippingPrice", shippingPrice);
+  localStorage.setItem("shippingFreePrice", shippingFreePrice);
+
   //set items to sessionStorage
   //  sessionStorage.setItem("taxRate", taxRate);
   //  sessionStorage.setItem("shippingPrice", shippingPrice);
@@ -23,7 +25,14 @@ productsDiv.addEventListener("click", (event) => {
       calculateProductPrice(event.target);
       calculateCartPrice();
     } else {
-      if (confirm("Product will be removed???")) {
+      if (
+        confirm(
+          `${
+            event.target.parentElement.parentElement.querySelector("h2")
+              .innerText
+          } will be deleted!!!`
+        )
+      ) {
         //remove
         event.target.parentElement.parentElement.parentElement.remove();
         calculateCartPrice();
@@ -43,26 +52,47 @@ productsDiv.addEventListener("click", (event) => {
   }
 });
 
-const calculateProductPrice = (clickedBtn) => {
-  const productInfoDiv = clickedBtn.parentElement.parentElement;
+const calculateProductPrice = (btn) => {
+  const productInfoDiv = btn.parentElement.parentElement;
   //console.log(productInfoDiv);
   const price = productInfoDiv.querySelector(".product-price strong").innerText;
-  alert(price);
+  const quantity = productInfoDiv.querySelector(".quantity").innerText;
+  const productTotalDiv = productInfoDiv.querySelector(".product-line-price");
+  productTotalDiv.innerText = (price * quantity).toFixed(2);
+  //alert(quantity);
 };
 
-const calculateCartPrice = () => {};
- const productsTotalPricesDivs = document.querySelectorAll(".product-line-price");
-    //foreach ==> NodeList, Array
-    //const productsTotalPricesDivs = [...document.getElementsByClassName("product-line-price")];
+const calculateCartPrice = () => {
+  const productsTotalPricesDivs = document.querySelectorAll(
+    ".product-line-price"
+  );
+  //foreach ==> NodeList, Array
+  //const productsTotalPricesDivs = [...document.getElementsByClassName("product-line-price")];
 
-    let subtotal = 0;
-    productsTotalPricesDivs.forEach(div =>{
-        subtotal += parseFloat(div.innerText);
-    });
-    //console.log(subtotal);
-    const taxPrice = subtotal * localStorage.getItem("taxRate");
+  let subtotal = 0;
+  productsTotalPricesDivs.forEach((div) => {
+    subtotal += parseFloat(div.innerText);
+  });
+  //console.log(subtotal);
+  const taxPrice = subtotal * localStorage.getItem("taxRate");
 
-    const shippingPrice = (subtotal > 0 && subtotal < localStorage.getItem("shippingFreePrice") ? localStorage.getItem("shippingPrice") : 0)
+  const shippingPrice = parseFloat(
+    subtotal > 0 && subtotal < localStorage.getItem("shippingFreePrice")
+      ? localStorage.getItem("shippingPrice")
+      : 0
+  );
 
-    console.log(shippingPrice);
-}
+  console.log(shippingPrice);
+
+  document.querySelector("#cart-subtotal").lastElementChild.innerText =
+    subtotal.toFixed(2);
+  document.querySelector("#cart-tax p:nth-child(2)").innerText =
+    taxPrice.toFixed(2);
+  document.querySelector("#cart-shipping").children[1].innerText =
+    shippingPrice.toFixed(2);
+  document.querySelector("#cart-total").lastElementChild.innerText = (
+    subtotal +
+    taxPrice +
+    shippingPrice
+  ).toFixed(2);
+};
