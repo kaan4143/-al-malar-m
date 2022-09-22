@@ -1,8 +1,7 @@
 // const taxRate = 0.18;
 // const shippingPrice = 15;
 // const shippingFreePrice = 300;
-
-window.addEventListener("load", () => {
+ window.addEventListener("load", () => {
   calculateCartPrice();
   //set items to LocalStorage
   localStorage.setItem("taxRate", taxRate);
@@ -23,7 +22,7 @@ productsDiv.addEventListener("click", (event) => {
     if (event.target.parentElement.querySelector(".quantity").innerText > 1) {
       event.target.parentElement.querySelector(".quantity").innerText--;
       calculateProductPrice(event.target);
-      calculateCartPrice();
+      calculateCartPrice(); 
     } else {
       if (
         confirm(
